@@ -5,6 +5,6 @@ from apps.utils.gym_utils import Epsilon
 env = CartPoleEnvironment_V3()
 
 model = env.create_model()
-model.load_weights("models/cartpole_2000.h5")
+model.load_weights("models/sp_31000.h5")
 debug_env = CartPoleAiDebugEnvironment(env, model, Epsilon.constant(0))
 debug_env.run()
